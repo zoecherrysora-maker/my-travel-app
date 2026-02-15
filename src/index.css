@@ -1,0 +1,4 @@
+/* 這是專業版 Tailwind 的核心設定，它會讓 Vite 在編譯時自動產生最小、最快的 CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
