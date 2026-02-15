@@ -5,13 +5,13 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>智慧旅遊行程規劃器</title>
-    <!-- 這裡不需要放 Tailwind CDN 腳本，因為我們會透過 Vite 和 PostCSS 處理樣式 -->
+    <!-- 這裡不需要手動引用 CSS，Vite 在編譯時會自動處理並注入樣式 -->
   </head>
   <body class="bg-slate-50">
-    <!-- React 應用程式將會被渲染到這個 div 裡面 -->
+    <!-- React 應用程式將會掛載到這個 div 容器中 -->
     <div id="root"></div>
     
-    <!-- 引入位於 src 資料夾中的主程式碼 -->
+    <!-- 引用主程式進入點，請確保你的程式碼檔案放在 src/main.jsx -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
