@@ -1,4 +1,26 @@
-/* 這是專業版 Tailwind 的核心設定，它會讓 Vite 在編譯時自動產生最小、最快的 CSS */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 基礎樣式設定，確保網頁文字清晰且背景顏色正確 */
+@layer base {
+  body {
+    @apply antialiased text-slate-900 bg-slate-50 selection:bg-blue-100;
+  }
+}
+
+/* 旅遊規劃器專用的漸變進入動畫，增加介面的平滑感 */
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
